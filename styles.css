@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+     font-family: 'roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* INICIO HEADER */
+.nav{
+    background-color: #181818;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 28px;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #ddd;
+    padding: 20px;
+}
+
+.nav-list a:hover{
+    color: #fff ;
+}
+
+/* FIM HEADER */
+
+/* INICIO MAIN */
+.main{
+    width: 100%;
+    background: #000000;
+    min-height: calc(100vh - 80px);
+    background-image: url(images/laptop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+.main h1{
+    color: #fff;
+    font-size: 54px;
+}
+
+.main p{
+    color: #1e96FC;
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+.call-to-action{
+    background-color: #1e96FC;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+.main a{
+    text-decoration: none;
+color: #fff;
+}
+.call-to-action:hover{
+    transform: scale(1.1);
+}
+
+/* FIM MAIN */
+
+/* INICIO ABOUT */
+.about{
+    background-color: #ffffff;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about div{
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.about img{
+    max-width: 450px;
+    border-radius: 8px;
+}
+
+
+.about h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}   
+.about p{
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333333;
+}
+/* FIM ABOUT */
+
+/* INICIO PROJECTS */
+
+.projects{
+    width: 100%;
+    padding: 80px 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.projects h2{
+    font-size: 36px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.projects p{
+    font-size: 18px;
+    color: #1e96FC;
+    margin-bottom: 40px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.project-list{
+    width: 100%;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.projects img{
+    width: 25%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    opacity: 0.8;
+    border-radius: 8px;
+}
+
+.projects img:hover{
+    opacity: 1;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.action{
+    background-color: #1e96FC;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.action:hover{
+    transform: scale(1.1);
+}
+
+/* FIM PROJECTS */
+
+/* INICIO FOOTER */
+.footer{
+    background-color: #181818;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ddd;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.35);
+    padding: 70px 0;
+    color: #ffffff;
+}
+
+footer a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer p{
+    margin-left: 8px;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+/* FIM FOOTER */
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .nav {
+    justify-content: flex-end;
+    height: auto;
+    padding: 12px 5%;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 4px;
+    margin-right: 0;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .nav-list a {
+    padding: 10px 14px;
+  }
+
+  .main {
+    padding: 60px 10%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .main h1 {
+    font-size: 36px;
+  }
+
+  .main p {
+    font-size: 18px;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 50px 8%;
+    text-align: center;
+  }
+
+  .about div {
+    max-width: 100%;
+    padding-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .about img {
+    max-width: 280px;
+    width: 100%;
+  }
+
+  .project-list {
+    flex-direction: column;
+  }
+
+  .projects img {
+    width: 70%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .action,
+  .call-to-action {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 8px;
+    padding: 40px 10%;
+    text-align: center;
+  }
+}
